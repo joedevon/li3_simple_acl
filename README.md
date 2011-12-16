@@ -44,11 +44,11 @@ Therefore, Simple ACL only has one call. Acl::isAllowed($user, $perms);
 
 Once you've followed the setup instructions, you will call the ACL thusly:
 
-if(Acl::isAllowed($user, $perms)) {
-	echo 'open sesame'; // allowed
-} else {
-	echo 'uh uh, not so fast'; // denied
-}
+	if(Acl::isAllowed($user, $perms)) {
+		echo 'open sesame'; // allowed
+	} else {
+		echo 'uh uh, not so fast'; // denied
+	}
 
 The $user array can be obtained with a call to Lithium's Auth Layer e.g.
 
@@ -223,9 +223,9 @@ is pulled from the User.php view helper. Here's the code:
 
 ##Future plans
 
-Deny roles that are `banned`.
-Arrays in the $user['role'] field.
-Make it easier/more flexible to extend rules. E.g. for IPAddresses, or generic
+*Deny roles that are banned.
+*Arrays in the $user['role'] field.
+*Make it easier/more flexible to extend rules. E.g. for IPAddresses, or generic
 rules that go beyond roles and are still easy to compare from $user to $perm
 
 ##Credits
