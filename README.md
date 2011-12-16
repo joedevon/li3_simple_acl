@@ -223,9 +223,9 @@ is pulled from the User.php view helper. Here's the code:
 
 ##Future plans
 
-*Deny roles that are banned.
-*Arrays in the $user['role'] field.
-*Make it easier/more flexible to extend rules. E.g. for IPAddresses, or generic
+Deny roles that are banned.
+Arrays in the $user['role'] field.
+Make it easier/more flexible to extend rules. E.g. for IPAddresses, or generic
 rules that go beyond roles and are still easy to compare from $user to $perm
 
 ##Credits
