@@ -59,8 +59,7 @@ class Acl {
                 return true;
             }
             // match roles to rules
-            //fix't warning (Ev)
-            if (isset($user['role']) && $user['role'] == $rule) { // @note, beware empty user['role']s
+            if (!empty($user['role']) && $user['role'] == $rule) {
                 return true;
             }
             /**
